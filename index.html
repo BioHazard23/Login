@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Productos.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <div class="card p-4">
+            <h2 class="mb-4 text-center">Iniciar Sesión</h2>
+            <form id="login-form">
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container d-none" id="app-container">
+        <div class="card p-4">
+            <div class="d-flex justify-content-between mb-3">
+                <h4 id="usuario-nombre"></h4>
+                <button class="btn btn-danger btn-sm" id="cerrar-sesion">Cerrar Sesión</button>
+            </div>
+
+            <form id="form-producto" class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <input type="text" id="nombreProducto" class="form-control" placeholder="Nombre del Producto" required>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" id="precioProducto" class="form-control" placeholder="Precio" required>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" id="descripcionProducto" class="form-control" placeholder="Descripción" required>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-success w-100">Agregar</button>
+                </div>
+            </form>
+
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-productos"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

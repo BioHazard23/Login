@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-container, #app-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+h2, h4 {
+    color: #1e293b;
+}
+
+.btn-primary {
+    background-color: #4f46e5;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4338ca;
+}
+
+.btn-danger {
+    background-color: #ef4444;
+}
+
+.btn-danger:hover {
+    background-color: #dc2626;
+}
+
+.table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+input.form-control {
+    border-radius: 1rem;
+}
