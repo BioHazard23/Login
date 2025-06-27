@@ -74,12 +74,12 @@ function mostrarProductos () {
             <tr>
                 <td>${index + 1}</td>
                 <td>${p.nombre}</td>
-                <td>${p.precio}</td>
+                <td>$${p.precio}</td>
                 <td>${p.descripcion}</td>
                 <td>
-                    <button class="btn btn-danger btn-sm onclick="eliminarProducto(${index})">Eliminar</button>
+                    <button class="btn btn-danger btn-sm" onclick="eliminarProducto(${index})">Eliminar</button>
                 </td>
-            </tr>`;
+             </tr>`;
         tablaProductos.innerHTML += fila;
     });
 }
